@@ -90,7 +90,7 @@ const Details = () => {
     ).then((data) => {
       setSingle(data.categories[0]);
     });
-  }, []);
+  }, [catslug]);
 
   console.log(single)
 

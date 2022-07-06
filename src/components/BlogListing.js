@@ -1,7 +1,7 @@
 import "./blog.css";
 import React, { useEffect, useState } from "react";
 import { request, gql } from "graphql-request";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import BlogItem from "./BlogItem";
 
 const BlogListing = () => {
@@ -99,7 +99,7 @@ const BlogListing = () => {
                         <div
                           key={id}
                           className={
-                            activeCat == catItem.title || activeCat == "ALL"
+                            activeCat === catItem.title || activeCat === "ALL"
                               ? "active blog_item"
                               : "blog_item"
                           }
