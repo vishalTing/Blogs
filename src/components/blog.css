@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background-color: grey; */
+}
+.container {
+  display: flex;
+}
+.leftdiv {
+  border: 2px solid black;
+  width: 20%;
+  height: 1100px;
+  background-color: #ddd;
+  padding: 15px;
+}
+
+.header h3 {
+  text-align: center;
+}
+
+.leftdiv button {
+  display: block;
+  padding: 25px;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  /* background-color: grey; */
+  color: black;
+}
+
+.rightdiv {
+  text-align: center;
+  width: 80%;
+  background-color: #eee;
+  color: white;
+  height: 1100px;
+}
+
+.rightdiv button {
+  padding: 10px 20px 10px 20px;
+  background-color: grey;
+  font-weight: bold;
+}
+
+.rightdiv button:hover {
+  background-color: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.blog_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+.blog_item {
+  /* border: 1px solid black; */
+  box-shadow: rgba(11, 10, 10, 0.2) 0px 2px 8px 2px;
+  display: none;
+  margin: 10px;
+  background-color: #c3c2c2;
+}
+
+.blog_item.active {
+  display: block;
+}
+
+.content {
+  text-align: left;
+  padding: 5px 15px;
+}
+
+.search {
+  width: 100%;
+  padding: 5px;
+}
+
+.search::placeholder {
+  font-size: 20px;
+}
+
+.search:focus {
+  padding: 5px;
+  font-size: 15px;
+}
