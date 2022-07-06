@@ -93,6 +93,7 @@ const BlogListing = () => {
                       ) {
                         return find;
                       }
+                      return null
                     })
                     .map((blogItem, id) => {
                       return (
